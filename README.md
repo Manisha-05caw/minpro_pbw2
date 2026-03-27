@@ -21,14 +21,18 @@ Navigasi di bagian atas halaman berisi link ke Home, About Me, dan Certificates 
 ### Section Home
 Berisi foto profil, nama, tagline, deskripsi singkat, dan dua tombol CTA. Semua data diambil dari tabel `profil` di database.
 
+<img width="2736" height="825" alt="image" src="https://github.com/user-attachments/assets/fceb4918-3894-4f86-8967-4979139a37be" />
+
+
 ### Section About Me
 Berisi foto, bio diri, skills dengan progress bar, dan daftar pengalaman. Skills diambil dari tabel `skills`, pengalaman dari tabel `pengalaman`.
+
+<img width="2678" height="1116" alt="image" src="https://github.com/user-attachments/assets/39d5cdc2-1acf-4f99-97fe-66dd28dbc9da" />
 
 ### Section Certificates
 Berisi 3 kartu sertifikat asli dalam layout grid. Setiap card menampilkan foto sertifikat, judul, penerbit, tahun, deskripsi, dan tombol lihat sertifikat. Data diambil dari tabel `sertifikat`.
 
-### Footer
-Berisi teks copyright dengan nama yang diambil dinamis dari database.
+<img width="2720" height="1147" alt="image" src="https://github.com/user-attachments/assets/16152ba9-dfb2-4534-8bf4-9179c853e40b" />
 
 ---
 
@@ -47,6 +51,73 @@ File ini bertugas menghubungkan website ke database MySQL. Di-include ke `index.
 </a>
 ```
 Nama di navbar diambil dari hasil query tabel `profil` menggunakan `mysqli_fetch_assoc()`.
+
+## Penjelasan style.css
+
+### Body (Dasar Halaman)
+```css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+```
+- `font-family` — mengatur font seluruh halaman menjadi Arial
+- `background-color: #ffffff` — background halaman putih
+- `color: #333333` — warna teks default abu-abu gelap
+
+---
+
+### Navbar
+```css
+.navbar-brand {
+  font-weight: bold;
+  color: #7040d4 !important;
+}
+.nav-link:hover {
+  color: #7040d4 !important;
+}
+```
+- `.navbar-brand` — membuat nama di navbar tebal dan berwarna ungu
+- `.nav-link:hover` — saat link navbar di-hover, warnanya berubah jadi ungu
+- `!important` — memaksa warna ini menimpa warna bawaan Bootstrap
+
+---
+
+### Tombol Custom
+```css
+.btn-ungu {
+  background-color: #7040d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.btn-ungu:hover {
+  background-color: #5930b0;
+  color: white;
+}
+```
+- `.btn-ungu` — tombol dengan background ungu, teks putih, sudut membulat
+- `padding: 8px 20px` — jarak dalam tombol (atas-bawah 8px, kiri-kanan 20px)
+- `.btn-ungu:hover` — saat tombol di-hover, warna ungu menjadi lebih gelap
+
+```css
+.btn-outline-ungu {
+  background-color: transparent;
+  color: #7040d4;
+  border: 2px solid #7040d4;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.btn-outline-ungu:hover {
+  background-color: #7040d4;
+  color: white;
+}
+```
+- `.btn-outline-ungu` — tombol transparan dengan border ungu dan teks ungu
+- `.btn-outline-ungu:hover` — saat di-hover, background berubah jadi ungu dan teks jadi putih
+
 
 ### Section Home (dinamis)
 ```php

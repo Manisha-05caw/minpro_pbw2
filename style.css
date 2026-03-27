@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #7040d4 !important;
+}
+
+.nav-link:hover {
+  color: #7040d4 !important;
+}
+
+.btn-ungu {
+  background-color: #7040d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.btn-ungu:hover {
+  background-color: #5930b0;
+  color: white;
+}
+
+.btn-outline-ungu {
+  background-color: transparent;
+  color: #7040d4;
+  border: 2px solid #7040d4;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.btn-outline-ungu:hover {
+  background-color: #7040d4;
+  color: white;
+}
+
+.section-home {
+  background-color: #f3eeff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.foto-profil {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid #7040d4;
+}
+
+.section-about {
+  background-color: #ffffff;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #e4d6fc;
+}
+
+.progress-bar {
+  background-color: #7040d4;
+  border-radius: 10px;
+}
+
+.section-cert {
+  background-color: #f9f5ff;
+}
+
+.card {
+  border: 1px solid #e4d6fc;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(112, 64, 212, 0.2) !important;
+}
+
+.footer-custom {
+  background-color: #7040d4;
+  color: white;
+}

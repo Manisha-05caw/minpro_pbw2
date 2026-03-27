@@ -1,13 +1,5 @@
 # Portfolio Website - Syawe Manisha P. Siregar
 
-## Cara Menjalankan
-
-1. Taruh folder `portfolio` di `C:\laragon\www\`
-2. Buka `http://localhost/phpmyadmin`
-3. Klik **Import** → pilih file `portfolio.sql` → klik **Go**
-4. Buka browser → `http://localhost/portfolio`
-
----
 
 ## Tampilan Setiap Section / Fitur
 
